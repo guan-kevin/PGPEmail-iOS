@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A07D6A52671D5BF00CD6747 /* PGPEmailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6A42671D5BF00CD6747 /* PGPEmailApp.swift */; };
+		0A07D6A72671D5BF00CD6747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6A62671D5BF00CD6747 /* ContentView.swift */; };
+		0A07D6A92671D5C100CD6747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A07D6A82671D5C100CD6747 /* Assets.xcassets */; };
+		0A07D6AC2671D5C100CD6747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A07D6AB2671D5C100CD6747 /* Preview Assets.xcassets */; };
+		0A07D6B52671DB1000CD6747 /* MailCoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6B42671DB1000CD6747 /* MailCoreManager.swift */; };
+		0A07D6B72671E84E00CD6747 /* PGPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6B62671E84E00CD6747 /* PGPManager.swift */; };
+		0A07D6B92672E89600CD6747 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6B82672E89600CD6747 /* KeychainManager.swift */; };
+		0A07D6BC2672E9BA00CD6747 /* PGPEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6BB2672E9BA00CD6747 /* PGPEmailViewModel.swift */; };
+		0A07D6C02672F38B00CD6747 /* AccountSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6BF2672F38B00CD6747 /* AccountSetupView.swift */; };
+		0A07D6C2267324C100CD6747 /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C1267324C100CD6747 /* FolderView.swift */; };
+		0A07D6C42673251500CD6747 /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C32673251500CD6747 /* FolderViewModel.swift */; };
+		0A07D6C62673252E00CD6747 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C52673252E00CD6747 /* Message.swift */; };
+		0A07D6C926733DB200CD6747 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C826733DB200CD6747 /* Storage.swift */; };
+		0A07D6CB26733F8A00CD6747 /* FolderMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6CA26733F8A00CD6747 /* FolderMessageView.swift */; };
+		0A07D6CE267342E500CD6747 /* EmailDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6CD267342E500CD6747 /* EmailDateFormatter.swift */; };
+		0A07D6D0267348BE00CD6747 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6CF267348BE00CD6747 /* Content.swift */; };
+		0A07D6D226734C1D00CD6747 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D126734C1D00CD6747 /* EmailView.swift */; };
+		0A07D6D42673EEFD00CD6747 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D32673EEFD00CD6747 /* WebView.swift */; };
+		0A07D6D62674164700CD6747 /* MIMEMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D52674164700CD6747 /* MIMEMessage.swift */; };
+		0A07D6D82674300300CD6747 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D72674300300CD6747 /* EmailViewModel.swift */; };
+		0A07D6DA2674330E00CD6747 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D92674330E00CD6747 /* TextView.swift */; };
+		0A07D6DE267486B100CD6747 /* EmailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6DD267486B100CD6747 /* EmailHeaderView.swift */; };
+		0A07D6E026756E8500CD6747 /* EmailHeaderBadgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6DF26756E8500CD6747 /* EmailHeaderBadgetView.swift */; };
+		0A07D6E926768F0B00CD6747 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6E826768F0B00CD6747 /* NotificationService.swift */; };
+		0A07D6ED26768F0B00CD6747 /* RemoteNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A07D6E626768F0B00CD6747 /* RemoteNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A563B3526AFBD690043F242 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C826733DB200CD6747 /* Storage.swift */; };
+		0A563B3626AFBD690043F242 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C826733DB200CD6747 /* Storage.swift */; };
+		0A563B3926AFC6120043F242 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A563B3826AFC6120043F242 /* Config.swift */; };
+		0A563B3A26AFC6120043F242 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A563B3826AFC6120043F242 /* Config.swift */; };
+		0A563B3B26AFC6120043F242 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A563B3826AFC6120043F242 /* Config.swift */; };
+		0AC8F77A26910E6700808E43 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8F77926910E6700808E43 /* SafariView.swift */; };
+		0AC8F781269114F300808E43 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC8F780269114F300808E43 /* WidgetKit.framework */; };
+		0AC8F783269114F300808E43 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC8F782269114F300808E43 /* SwiftUI.framework */; };
+		0AC8F786269114F300808E43 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8F785269114F300808E43 /* Widget.swift */; };
+		0AC8F789269114F600808E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8F788269114F600808E43 /* Assets.xcassets */; };
+		0AC8F78B269114F600808E43 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8F787269114F300808E43 /* Widget.intentdefinition */; };
+		0AC8F78C269114F600808E43 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8F787269114F300808E43 /* Widget.intentdefinition */; };
+		0AC8F78F269114F600808E43 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AC8F77F269114F300808E43 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0AC8F797269182CF00808E43 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C52673252E00CD6747 /* Message.swift */; };
+		0AC8F79926918A6B00808E43 /* EmailDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6CD267342E500CD6747 /* EmailDateFormatter.swift */; };
+		0AFED6D62677E404000E2A6B /* MIMEMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D52674164700CD6747 /* MIMEMessage.swift */; };
+		0AFED6D82677E530000E2A6B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED6D72677E530000E2A6B /* String+Extension.swift */; };
+		0AFED6D92677E534000E2A6B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED6D72677E530000E2A6B /* String+Extension.swift */; };
+		0AFED717267B16E5000E2A6B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED716267B16E5000E2A6B /* SettingsView.swift */; };
+		CF159591A2C3F3CE16B128FD /* Pods_RemoteNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEA8D5C4E1BB387D9AB6153 /* Pods_RemoteNotification.framework */; };
+		DB8CCA981FCE2687FED85221 /* Pods_PGPEmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CED6362FE3D08D143BC3F1 /* Pods_PGPEmail.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A07D6EB26768F0B00CD6747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A07D6992671D5BF00CD6747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A07D6E526768F0B00CD6747;
+			remoteInfo = RemoteNotification;
+		};
+		0AC8F78D269114F600808E43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A07D6992671D5BF00CD6747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AC8F77E269114F300808E43;
+			remoteInfo = WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A07D6F126768F0B00CD6747 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0AC8F78F269114F600808E43 /* WidgetExtension.appex in Embed App Extensions */,
+				0A07D6ED26768F0B00CD6747 /* RemoteNotification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A07D6A12671D5BF00CD6747 /* PGPEmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGPEmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A07D6A42671D5BF00CD6747 /* PGPEmailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGPEmailApp.swift; sourceTree = "<group>"; };
+		0A07D6A62671D5BF00CD6747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A07D6A82671D5C100CD6747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A07D6AB2671D5C100CD6747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A07D6AD2671D5C100CD6747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A07D6B32671D85D00CD6747 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		0A07D6B42671DB1000CD6747 /* MailCoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCoreManager.swift; sourceTree = "<group>"; };
+		0A07D6B62671E84E00CD6747 /* PGPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGPManager.swift; sourceTree = "<group>"; };
+		0A07D6B82672E89600CD6747 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		0A07D6BB2672E9BA00CD6747 /* PGPEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGPEmailViewModel.swift; sourceTree = "<group>"; };
+		0A07D6BF2672F38B00CD6747 /* AccountSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetupView.swift; sourceTree = "<group>"; };
+		0A07D6C1267324C100CD6747 /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		0A07D6C32673251500CD6747 /* FolderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
+		0A07D6C52673252E00CD6747 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0A07D6C826733DB200CD6747 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		0A07D6CA26733F8A00CD6747 /* FolderMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderMessageView.swift; sourceTree = "<group>"; };
+		0A07D6CD267342E500CD6747 /* EmailDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDateFormatter.swift; sourceTree = "<group>"; };
+		0A07D6CF267348BE00CD6747 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		0A07D6D126734C1D00CD6747 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		0A07D6D32673EEFD00CD6747 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		0A07D6D52674164700CD6747 /* MIMEMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIMEMessage.swift; sourceTree = "<group>"; };
+		0A07D6D72674300300CD6747 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		0A07D6D92674330E00CD6747 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		0A07D6DD267486B100CD6747 /* EmailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHeaderView.swift; sourceTree = "<group>"; };
+		0A07D6DF26756E8500CD6747 /* EmailHeaderBadgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHeaderBadgetView.swift; sourceTree = "<group>"; };
+		0A07D6E126768AF300CD6747 /* PGPEmail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PGPEmail.entitlements; sourceTree = "<group>"; };
+		0A07D6E626768F0B00CD6747 /* RemoteNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RemoteNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A07D6E826768F0B00CD6747 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		0A07D6EA26768F0B00CD6747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A07D6F22676A97B00CD6747 /* RemoteNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteNotification.entitlements; sourceTree = "<group>"; };
+		0A563B3826AFC6120043F242 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0AC8F77926910E6700808E43 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		0AC8F77F269114F300808E43 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC8F780269114F300808E43 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0AC8F782269114F300808E43 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0AC8F785269114F300808E43 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		0AC8F787269114F300808E43 /* Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widget.intentdefinition; sourceTree = "<group>"; };
+		0AC8F788269114F600808E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AC8F78A269114F600808E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC8F794269181E800808E43 /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
+		0AFED6D72677E530000E2A6B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		0AFED716267B16E5000E2A6B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		19CED6362FE3D08D143BC3F1 /* Pods_PGPEmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGPEmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CEA8D5C4E1BB387D9AB6153 /* Pods_RemoteNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		536E58CFF5DE3500B256AA3B /* Pods-PGPEmail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGPEmail.release.xcconfig"; path = "Target Support Files/Pods-PGPEmail/Pods-PGPEmail.release.xcconfig"; sourceTree = "<group>"; };
+		7F239E1C19A8DFA0546E5D85 /* Pods-RemoteNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteNotification.release.xcconfig"; path = "Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification.release.xcconfig"; sourceTree = "<group>"; };
+		B7D67897620D2BDDA3A79CC4 /* Pods-PGPEmail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGPEmail.debug.xcconfig"; path = "Target Support Files/Pods-PGPEmail/Pods-PGPEmail.debug.xcconfig"; sourceTree = "<group>"; };
+		E04CBF06D4AA837332E70F1D /* Pods-RemoteNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteNotification.debug.xcconfig"; path = "Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A07D69E2671D5BF00CD6747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB8CCA981FCE2687FED85221 /* Pods_PGPEmail.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A07D6E326768F0B00CD6747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF159591A2C3F3CE16B128FD /* Pods_RemoteNotification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC8F77C269114F300808E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC8F783269114F300808E43 /* SwiftUI.framework in Frameworks */,
+				0AC8F781269114F300808E43 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A07D6982671D5BF00CD6747 = {
+			isa = PBXGroup;
+			children = (
+				0AC8F794269181E800808E43 /* WidgetExtension.entitlements */,
+				0A07D6A32671D5BF00CD6747 /* PGPEmail */,
+				0A07D6E726768F0B00CD6747 /* RemoteNotification */,
+				0AC8F784269114F300808E43 /* Widget */,
+				0A07D6A22671D5BF00CD6747 /* Products */,
+				B9EC7B1AC799AE21FE22A5F0 /* Pods */,
+				43967ABF3CD33AC80531B113 /* Frameworks */,
+				0A563B3826AFC6120043F242 /* Config.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		0A07D6A22671D5BF00CD6747 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6A12671D5BF00CD6747 /* PGPEmail.app */,
+				0A07D6E626768F0B00CD6747 /* RemoteNotification.appex */,
+				0AC8F77F269114F300808E43 /* WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A07D6A32671D5BF00CD6747 /* PGPEmail */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6E126768AF300CD6747 /* PGPEmail.entitlements */,
+				0A07D6A42671D5BF00CD6747 /* PGPEmailApp.swift */,
+				0A07D6BE2672F36300CD6747 /* Views */,
+				0A07D6BA2672E98700CD6747 /* Helpers */,
+				0A07D6BD2672E9EA00CD6747 /* View Models */,
+				0A07D6C72673253200CD6747 /* Models */,
+				0AC8F7932691150300808E43 /* Extensions */,
+				0A07D6A82671D5C100CD6747 /* Assets.xcassets */,
+				0A07D6AD2671D5C100CD6747 /* Info.plist */,
+				0A07D6AA2671D5C100CD6747 /* Preview Content */,
+			);
+			path = PGPEmail;
+			sourceTree = "<group>";
+		};
+		0A07D6AA2671D5C100CD6747 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6AB2671D5C100CD6747 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A07D6BA2672E98700CD6747 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6B32671D85D00CD6747 /* Bridge.h */,
+				0A07D6B42671DB1000CD6747 /* MailCoreManager.swift */,
+				0A07D6B62671E84E00CD6747 /* PGPManager.swift */,
+				0A07D6B82672E89600CD6747 /* KeychainManager.swift */,
+				0A07D6C826733DB200CD6747 /* Storage.swift */,
+				0A07D6CD267342E500CD6747 /* EmailDateFormatter.swift */,
+				0A07D6D52674164700CD6747 /* MIMEMessage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A07D6BD2672E9EA00CD6747 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6BB2672E9BA00CD6747 /* PGPEmailViewModel.swift */,
+				0A07D6C32673251500CD6747 /* FolderViewModel.swift */,
+				0A07D6D72674300300CD6747 /* EmailViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		0A07D6BE2672F36300CD6747 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6A62671D5BF00CD6747 /* ContentView.swift */,
+				0A07D6BF2672F38B00CD6747 /* AccountSetupView.swift */,
+				0A07D6CC26733F9000CD6747 /* Folder */,
+				0A07D6DC267486A600CD6747 /* Email */,
+				0A07D6DB2674331800CD6747 /* UIView */,
+				0AFED716267B16E5000E2A6B /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A07D6C72673253200CD6747 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6C52673252E00CD6747 /* Message.swift */,
+				0A07D6CF267348BE00CD6747 /* Content.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A07D6CC26733F9000CD6747 /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6C1267324C100CD6747 /* FolderView.swift */,
+				0A07D6CA26733F8A00CD6747 /* FolderMessageView.swift */,
+			);
+			path = Folder;
+			sourceTree = "<group>";
+		};
+		0A07D6DB2674331800CD6747 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6D32673EEFD00CD6747 /* WebView.swift */,
+				0A07D6D92674330E00CD6747 /* TextView.swift */,
+				0AC8F77926910E6700808E43 /* SafariView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		0A07D6DC267486A600CD6747 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6D126734C1D00CD6747 /* EmailView.swift */,
+				0A07D6DD267486B100CD6747 /* EmailHeaderView.swift */,
+				0A07D6DF26756E8500CD6747 /* EmailHeaderBadgetView.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		0A07D6E726768F0B00CD6747 /* RemoteNotification */ = {
+			isa = PBXGroup;
+			children = (
+				0A07D6F22676A97B00CD6747 /* RemoteNotification.entitlements */,
+				0A07D6E826768F0B00CD6747 /* NotificationService.swift */,
+				0A07D6EA26768F0B00CD6747 /* Info.plist */,
+			);
+			path = RemoteNotification;
+			sourceTree = "<group>";
+		};
+		0AC8F784269114F300808E43 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				0AC8F785269114F300808E43 /* Widget.swift */,
+				0AC8F787269114F300808E43 /* Widget.intentdefinition */,
+				0AC8F788269114F600808E43 /* Assets.xcassets */,
+				0AC8F78A269114F600808E43 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		0AC8F7932691150300808E43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AFED6D72677E530000E2A6B /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		43967ABF3CD33AC80531B113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19CED6362FE3D08D143BC3F1 /* Pods_PGPEmail.framework */,
+				4CEA8D5C4E1BB387D9AB6153 /* Pods_RemoteNotification.framework */,
+				0AC8F780269114F300808E43 /* WidgetKit.framework */,
+				0AC8F782269114F300808E43 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9EC7B1AC799AE21FE22A5F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7D67897620D2BDDA3A79CC4 /* Pods-PGPEmail.debug.xcconfig */,
+				536E58CFF5DE3500B256AA3B /* Pods-PGPEmail.release.xcconfig */,
+				E04CBF06D4AA837332E70F1D /* Pods-RemoteNotification.debug.xcconfig */,
+				7F239E1C19A8DFA0546E5D85 /* Pods-RemoteNotification.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A07D6A02671D5BF00CD6747 /* PGPEmail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A07D6B02671D5C100CD6747 /* Build configuration list for PBXNativeTarget "PGPEmail" */;
+			buildPhases = (
+				6B09B74250E6BCB1CF0557F4 /* [CP] Check Pods Manifest.lock */,
+				0A07D69D2671D5BF00CD6747 /* Sources */,
+				0A07D69E2671D5BF00CD6747 /* Frameworks */,
+				0A07D69F2671D5BF00CD6747 /* Resources */,
+				54CA1383AB715E33743414B9 /* [CP] Embed Pods Frameworks */,
+				0A07D6F126768F0B00CD6747 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A07D6EC26768F0B00CD6747 /* PBXTargetDependency */,
+				0AC8F78E269114F600808E43 /* PBXTargetDependency */,
+			);
+			name = PGPEmail;
+			productName = PGPEmail;
+			productReference = 0A07D6A12671D5BF00CD6747 /* PGPEmail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A07D6E526768F0B00CD6747 /* RemoteNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A07D6EE26768F0B00CD6747 /* Build configuration list for PBXNativeTarget "RemoteNotification" */;
+			buildPhases = (
+				003D97C30D01CC1F8C14CF32 /* [CP] Check Pods Manifest.lock */,
+				0A07D6E226768F0B00CD6747 /* Sources */,
+				0A07D6E326768F0B00CD6747 /* Frameworks */,
+				0A07D6E426768F0B00CD6747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteNotification;
+			productName = RemoteNotification;
+			productReference = 0A07D6E626768F0B00CD6747 /* RemoteNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0AC8F77E269114F300808E43 /* WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC8F790269114F600808E43 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildPhases = (
+				0AC8F77B269114F300808E43 /* Sources */,
+				0AC8F77C269114F300808E43 /* Frameworks */,
+				0AC8F77D269114F300808E43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtension;
+			productName = WidgetExtension;
+			productReference = 0AC8F77F269114F300808E43 /* WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A07D6992671D5BF00CD6747 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					0A07D6A02671D5BF00CD6747 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					0A07D6E526768F0B00CD6747 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					0AC8F77E269114F300808E43 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 0A07D69C2671D5BF00CD6747 /* Build configuration list for PBXProject "PGPEmail" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A07D6982671D5BF00CD6747;
+			productRefGroup = 0A07D6A22671D5BF00CD6747 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A07D6A02671D5BF00CD6747 /* PGPEmail */,
+				0A07D6E526768F0B00CD6747 /* RemoteNotification */,
+				0AC8F77E269114F300808E43 /* WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A07D69F2671D5BF00CD6747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A07D6AC2671D5C100CD6747 /* Preview Assets.xcassets in Resources */,
+				0A07D6A92671D5C100CD6747 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A07D6E426768F0B00CD6747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC8F77D269114F300808E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC8F789269114F600808E43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003D97C30D01CC1F8C14CF32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteNotification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54CA1383AB715E33743414B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PGPEmail/Pods-PGPEmail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PGPEmail/Pods-PGPEmail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PGPEmail/Pods-PGPEmail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B09B74250E6BCB1CF0557F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PGPEmail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A07D69D2671D5BF00CD6747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A07D6A72671D5BF00CD6747 /* ContentView.swift in Sources */,
+				0AFED717267B16E5000E2A6B /* SettingsView.swift in Sources */,
+				0A07D6D42673EEFD00CD6747 /* WebView.swift in Sources */,
+				0A07D6C926733DB200CD6747 /* Storage.swift in Sources */,
+				0AC8F77A26910E6700808E43 /* SafariView.swift in Sources */,
+				0A07D6B72671E84E00CD6747 /* PGPManager.swift in Sources */,
+				0A07D6B52671DB1000CD6747 /* MailCoreManager.swift in Sources */,
+				0A07D6A52671D5BF00CD6747 /* PGPEmailApp.swift in Sources */,
+				0A07D6C02672F38B00CD6747 /* AccountSetupView.swift in Sources */,
+				0AC8F78C269114F600808E43 /* Widget.intentdefinition in Sources */,
+				0A07D6CB26733F8A00CD6747 /* FolderMessageView.swift in Sources */,
+				0A07D6E026756E8500CD6747 /* EmailHeaderBadgetView.swift in Sources */,
+				0A07D6DE267486B100CD6747 /* EmailHeaderView.swift in Sources */,
+				0A07D6B92672E89600CD6747 /* KeychainManager.swift in Sources */,
+				0A07D6C42673251500CD6747 /* FolderViewModel.swift in Sources */,
+				0AFED6D82677E530000E2A6B /* String+Extension.swift in Sources */,
+				0A07D6D0267348BE00CD6747 /* Content.swift in Sources */,
+				0A07D6C62673252E00CD6747 /* Message.swift in Sources */,
+				0A07D6C2267324C100CD6747 /* FolderView.swift in Sources */,
+				0A563B3926AFC6120043F242 /* Config.swift in Sources */,
+				0A07D6D82674300300CD6747 /* EmailViewModel.swift in Sources */,
+				0A07D6CE267342E500CD6747 /* EmailDateFormatter.swift in Sources */,
+				0A07D6BC2672E9BA00CD6747 /* PGPEmailViewModel.swift in Sources */,
+				0A07D6D62674164700CD6747 /* MIMEMessage.swift in Sources */,
+				0A07D6DA2674330E00CD6747 /* TextView.swift in Sources */,
+				0A07D6D226734C1D00CD6747 /* EmailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A07D6E226768F0B00CD6747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFED6D92677E534000E2A6B /* String+Extension.swift in Sources */,
+				0A563B3526AFBD690043F242 /* Storage.swift in Sources */,
+				0A563B3A26AFC6120043F242 /* Config.swift in Sources */,
+				0AFED6D62677E404000E2A6B /* MIMEMessage.swift in Sources */,
+				0A07D6E926768F0B00CD6747 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC8F77B269114F300808E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC8F797269182CF00808E43 /* Message.swift in Sources */,
+				0AC8F78B269114F600808E43 /* Widget.intentdefinition in Sources */,
+				0AC8F79926918A6B00808E43 /* EmailDateFormatter.swift in Sources */,
+				0AC8F786269114F300808E43 /* Widget.swift in Sources */,
+				0A563B3626AFBD690043F242 /* Storage.swift in Sources */,
+				0A563B3B26AFC6120043F242 /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A07D6EC26768F0B00CD6747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A07D6E526768F0B00CD6747 /* RemoteNotification */;
+			targetProxy = 0A07D6EB26768F0B00CD6747 /* PBXContainerItemProxy */;
+		};
+		0AC8F78E269114F600808E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AC8F77E269114F300808E43 /* WidgetExtension */;
+			targetProxy = 0AC8F78D269114F600808E43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A07D6AE2671D5C100CD6747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A07D6AF2671D5C100CD6747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A07D6B12671D5C100CD6747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D67897620D2BDDA3A79CC4 /* Pods-PGPEmail.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PGPEmail/PGPEmail.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"PGPEmail/Preview Content\"";
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"$(PODS_ROOT)/Headers/Public/mailcore2-ios/\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+				);
+				INFOPLIST_FILE = PGPEmail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinguan.PGPEmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PGPEmail/Helpers/Bridge.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A07D6B22671D5C100CD6747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536E58CFF5DE3500B256AA3B /* Pods-PGPEmail.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PGPEmail/PGPEmail.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"PGPEmail/Preview Content\"";
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"$(PODS_ROOT)/Headers/Public/mailcore2-ios/\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+				);
+				INFOPLIST_FILE = PGPEmail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinguan.PGPEmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PGPEmail/Helpers/Bridge.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A07D6EF26768F0B00CD6747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04CBF06D4AA837332E70F1D /* Pods-RemoteNotification.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RemoteNotification/RemoteNotification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				INFOPLIST_FILE = RemoteNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinguan.PGPEmail.RemoteNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A07D6F026768F0B00CD6747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F239E1C19A8DFA0546E5D85 /* Pods-RemoteNotification.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RemoteNotification/RemoteNotification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				INFOPLIST_FILE = RemoteNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinguan.PGPEmail.RemoteNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0AC8F791269114F600808E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinguan.PGPEmail.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AC8F792269114F600808E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinguan.PGPEmail.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A07D69C2671D5BF00CD6747 /* Build configuration list for PBXProject "PGPEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A07D6AE2671D5C100CD6747 /* Debug */,
+				0A07D6AF2671D5C100CD6747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A07D6B02671D5C100CD6747 /* Build configuration list for PBXNativeTarget "PGPEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A07D6B12671D5C100CD6747 /* Debug */,
+				0A07D6B22671D5C100CD6747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A07D6EE26768F0B00CD6747 /* Build configuration list for PBXNativeTarget "RemoteNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A07D6EF26768F0B00CD6747 /* Debug */,
+				0A07D6F026768F0B00CD6747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AC8F790269114F600808E43 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC8F791269114F600808E43 /* Debug */,
+				0AC8F792269114F600808E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A07D6992671D5BF00CD6747 /* Project object */;
+}

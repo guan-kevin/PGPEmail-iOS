@@ -1,0 +1,9 @@
+Config.swift
+
+Podfile.lock
+
+.DS_Store
+
+xcuserdata/
+
+Pods/
