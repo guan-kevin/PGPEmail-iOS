@@ -19,7 +19,7 @@ struct EmailHeaderView: View {
                     .font(.headline)
                 Spacer()
 
-                EmailHeaderBadgetView(flag: message.flags, encrypted: viewModel.content?.encrypted)
+                EmailHeaderBadgeView(flag: message.flags, encrypted: viewModel.content?.encrypted)
             }
             .contentShape(Rectangle())
             .padding(5)

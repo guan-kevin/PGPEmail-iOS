@@ -30,7 +30,7 @@ final class FolderViewModel: ObservableObject {
                                 selection = openUID
                             }
                         }
-                        
+
                         DispatchQueue.main.async {
                             self.messages = msgs.sorted(by: { $0.sendDate > $1.sendDate })
                             self.save(folder: folder)

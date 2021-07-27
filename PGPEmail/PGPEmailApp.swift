@@ -44,8 +44,6 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
                     }
                 }
             }
-
-        UIApplication.shared.registerForRemoteNotifications()
         return true
     }
 

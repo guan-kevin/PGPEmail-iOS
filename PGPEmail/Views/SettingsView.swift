@@ -33,7 +33,7 @@ struct SettingsView: View {
                     .padding(.horizontal, 10)
                 Spacer()
             }
-            
+
             SecureField("Password", text: $keyPassword)
                 .padding()
 

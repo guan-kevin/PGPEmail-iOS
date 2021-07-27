@@ -29,7 +29,7 @@
 		0A07D6D82674300300CD6747 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D72674300300CD6747 /* EmailViewModel.swift */; };
 		0A07D6DA2674330E00CD6747 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6D92674330E00CD6747 /* TextView.swift */; };
 		0A07D6DE267486B100CD6747 /* EmailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6DD267486B100CD6747 /* EmailHeaderView.swift */; };
-		0A07D6E026756E8500CD6747 /* EmailHeaderBadgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6DF26756E8500CD6747 /* EmailHeaderBadgetView.swift */; };
+		0A07D6E026756E8500CD6747 /* EmailHeaderBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6DF26756E8500CD6747 /* EmailHeaderBadgeView.swift */; };
 		0A07D6E926768F0B00CD6747 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6E826768F0B00CD6747 /* NotificationService.swift */; };
 		0A07D6ED26768F0B00CD6747 /* RemoteNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A07D6E626768F0B00CD6747 /* RemoteNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A563B3526AFBD690043F242 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07D6C826733DB200CD6747 /* Storage.swift */; };
@@ -113,7 +113,7 @@
 		0A07D6D72674300300CD6747 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
 		0A07D6D92674330E00CD6747 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		0A07D6DD267486B100CD6747 /* EmailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHeaderView.swift; sourceTree = "<group>"; };
-		0A07D6DF26756E8500CD6747 /* EmailHeaderBadgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHeaderBadgetView.swift; sourceTree = "<group>"; };
+		0A07D6DF26756E8500CD6747 /* EmailHeaderBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHeaderBadgeView.swift; sourceTree = "<group>"; };
 		0A07D6E126768AF300CD6747 /* PGPEmail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PGPEmail.entitlements; sourceTree = "<group>"; };
 		0A07D6E626768F0B00CD6747 /* RemoteNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RemoteNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A07D6E826768F0B00CD6747 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -287,7 +287,7 @@
 			children = (
 				0A07D6D126734C1D00CD6747 /* EmailView.swift */,
 				0A07D6DD267486B100CD6747 /* EmailHeaderView.swift */,
-				0A07D6DF26756E8500CD6747 /* EmailHeaderBadgetView.swift */,
+				0A07D6DF26756E8500CD6747 /* EmailHeaderBadgeView.swift */,
 			);
 			path = Email;
 			sourceTree = "<group>";
@@ -550,7 +550,7 @@
 				0A07D6C02672F38B00CD6747 /* AccountSetupView.swift in Sources */,
 				0AC8F78C269114F600808E43 /* Widget.intentdefinition in Sources */,
 				0A07D6CB26733F8A00CD6747 /* FolderMessageView.swift in Sources */,
-				0A07D6E026756E8500CD6747 /* EmailHeaderBadgetView.swift in Sources */,
+				0A07D6E026756E8500CD6747 /* EmailHeaderBadgeView.swift in Sources */,
 				0A07D6DE267486B100CD6747 /* EmailHeaderView.swift in Sources */,
 				0A07D6B92672E89600CD6747 /* KeychainManager.swift in Sources */,
 				0A07D6C42673251500CD6747 /* FolderViewModel.swift in Sources */,

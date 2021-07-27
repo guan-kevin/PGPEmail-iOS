@@ -1,5 +1,5 @@
 //
-//  EmailHeaderBadgetView.swift
+//  EmailHeaderBadgeView.swift
 //  PGPEmail
 //
 //  Created by Kevin Guan on 6/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EmailHeaderBadgetView: View {
+struct EmailHeaderBadgeView: View {
     var flag: Int
     var encrypted: Bool?
 
