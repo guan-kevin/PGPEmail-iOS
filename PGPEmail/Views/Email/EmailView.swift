@@ -16,7 +16,8 @@ struct EmailView: View {
     @StateObject var viewModel = EmailViewModel()
     @State var loading = true
 
-    @State var showAlert = false
+    @State var showUnsubscribeAlert = false
+    @State var showLinkAlert = false
     @State var showSafari = false
     @State var requestURL = ""
 
@@ -38,7 +39,7 @@ struct EmailView: View {
                             .onRequestToLoad { url in
                                 if url != "" {
                                     requestURL = url
-                                    showAlert = true
+                                    showLinkAlert = true
                                 }
                             }
                             .opacity(loading ? 0 : 1)
@@ -143,14 +144,7 @@ struct EmailView: View {
 
                             if message.unsubscribe != "" {
                                 Button(action: {
-                                    let splits = message.unsubscribe.components(separatedBy: "?subject=")
-                                    if splits.count == 2 {
-                                        MailCoreManager.shared.sendUnsubscribe(to: splits[0], subject: splits[1]) { success in
-                                            if success, folder == "INBOX" {
-                                                moveToTrash()
-                                            }
-                                        }
-                                    }
+                                    showUnsubscribeAlert = true
                                 }) {
                                     HStack {
                                         Image(systemName: "xmark.circle")
@@ -186,6 +180,35 @@ struct EmailView: View {
                     }
                 }
             }
+
+            Text("")
+                .alert(isPresented: $showLinkAlert, content: {
+                    Alert(title: Text("You are about to launch the web browser and navigate to"), message: Text(requestURL), primaryButton: .destructive(Text("OK"), action: {
+                        if requestURL.hasPrefix("http") {
+                            showSafari = true
+                        } else {
+                            if let url = URL(string: requestURL) {
+                                UIApplication.shared.open(url)
+                            }
+                        }
+                    }), secondaryButton: .cancel())
+                })
+                .hidden()
+
+            Text("")
+                .alert(isPresented: $showUnsubscribeAlert, content: {
+                    Alert(title: Text("Unsubscribe from Mailing List?"), message: Text("You can’t undo this action."), primaryButton: .destructive(Text("Yes"), action: {
+                        let splits = message.unsubscribe.components(separatedBy: "?subject=")
+                        if splits.count == 2 {
+                            MailCoreManager.shared.sendUnsubscribe(to: splits[0], subject: splits[1]) { success in
+                                if success, folder == "INBOX" {
+                                    moveToTrash()
+                                }
+                            }
+                        }
+                    }), secondaryButton: .cancel())
+                })
+                .hidden()
         }
         .actionSheet(isPresented: $showFolderAlert, content: {
             ActionSheet(title: Text("Move to Folder"), message: nil, buttons: getFolderButtons())
@@ -193,17 +216,6 @@ struct EmailView: View {
         .sheet(isPresented: $showSafari) {
             SafariView(url: URL(string: self.requestURL) ?? URL(string: "https://apple.com")!)
         }
-        .alert(isPresented: $showAlert, content: {
-            Alert(title: Text("You are about to launch the web browser and navigate to"), message: Text(requestURL), primaryButton: .destructive(Text("OK"), action: {
-                if requestURL.hasPrefix("http") {
-                    showSafari = true
-                } else {
-                    if let url = URL(string: requestURL) {
-                        UIApplication.shared.open(url)
-                    }
-                }
-            }), secondaryButton: .cancel())
-        })
         .navigationBarTitle("", displayMode: .inline)
         .onAppear {
             self.viewModel.loadEmail(folder: folder, id: message.id)
